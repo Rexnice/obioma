@@ -1,7 +1,7 @@
-import { StyleSheet, Text, View, TextInput} from 'react-native'
-import React from 'react'
-import { SafeAreaView } from 'react-native-safe-area-context'
-import COLORS from '../constants/colors'
+import { StyleSheet, Text, View, TextInput} from 'react-native';
+import React from 'react';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import COLORS from '../constants/colors';
 const Signup = () => {
   return (
     <SafeAreaView style={styles.safeAView}>
@@ -15,11 +15,53 @@ const Signup = () => {
                 </Text>
             </View>
             <View style={styles.container3}>
+                <Text style={styles.text3}>Name</Text>
+                <TextInput 
+                placeholder="Enter your name"
+                placeholderTextColor ={COLORS.black}
+                style={{
+                    width:'100%'
+                }}
+                />
+            </View>
+            <View style={styles.container3}>
                 <Text style={styles.text3}>Email address</Text>
                 <TextInput 
                 placeholder="Enter your email"
                 placeholderTextColor ={COLORS.black}
                 keyboardType='email-address'
+                style={{
+                    width:'100%'
+                }}
+                />
+            </View>
+            <View style={styles.container3}>
+                <Text style={styles.text3}>City</Text>
+                <TextInput 
+                placeholder="Enter your City"
+                placeholderTextColor ={COLORS.black}
+                style={{
+                    width:'100%'
+                }}
+                />
+            </View>
+            <View style={styles.container3}>
+                <Text style={styles.text3}>Password</Text>
+                <TextInput 
+                placeholder="Enter your password"
+                placeholderTextColor ={COLORS.black}
+                secureTextEntry={true}
+                style={{
+                    width:'100%'
+                }}
+                />
+            </View>
+            <View style={styles.container3}>
+                <Text style={styles.text3}>Confirm password</Text>
+                <TextInput 
+                placeholder="Confirm your password"
+                placeholderTextColor ={COLORS.black}
+                secureTextEntry={true}
                 style={{
                     width:'100%'
                 }}
@@ -39,7 +81,7 @@ export default Signup
 const styles = StyleSheet.create({
     safeAView:{
         flex:1,
-        backgroundColor: COLORS.primary
+        backgroundColor: COLORS.secondary,   
     },
     container1:{
         flex:1,
