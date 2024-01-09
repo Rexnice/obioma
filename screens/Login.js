@@ -24,7 +24,7 @@ const Login = () => {
               <TextInput
               placeholder="Enter your email"
               placeholderTextColor={COLORS.black}
-              style={{width:'50%'}}>
+              style={{width:'100%'}}>
               </TextInput>
             </View>
             <View>
