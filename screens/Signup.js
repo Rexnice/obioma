@@ -69,7 +69,7 @@ const Signup = () => {
             </View>
         </View>
         <View>
-            
+             
         </View>
     
     </SafeAreaView>

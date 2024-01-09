@@ -12,7 +12,7 @@ const Welcome = ({navigation}) => {
         </View>
         <View style={styles.middleContainer}>
             <Image
-            source={require("C:/Users/#emmyCode/Desktop/ErnestProject/ellastic/assets/firstImg.jpg")}
+            source={require("C:/Users/#emmyCode/Desktop/ErnestProject/obioma/assets/firstImg.jpg")}
             style={styles.image}
             />
         </View>
