@@ -1,77 +1,80 @@
-import { StyleSheet, Text, View, TextInput} from 'react-native';
+import { StyleSheet, Text, View, TextInput, ScrollView, Pressable, TouchableOpacity} from 'react-native';
 import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import COLORS from '../constants/colors';
-const Signup = () => {
+
+
+const Signup = (navigation) => {
   return (
     <SafeAreaView style={styles.safeAView}>
-        <View style={styles.container1}>
-            <View style={styles.container2}>
-                <Text style={styles.text1}>
-                    Create Account
-                </Text>
-                <Text style={styles.text2}>
-                    Connect with amazing tailors within Nigeria
-                </Text>
+        <ScrollView contentContainerStyle={styles.scrollContainer}>
+            <View style={styles.container1}>
+                <View style={styles.container2}>
+                    <Text style={styles.text1}>
+                        Create Account
+                    </Text>
+                    <Text style={styles.text2}>
+                        Connect with amazing tailors within Nigeria
+                    </Text>
+                </View>
+                <View style={styles.container3}>
+                    <Text style={styles.text3}>Name</Text>
+                    <TextInput 
+                    placeholder="Enter your name"
+                    placeholderTextColor ={COLORS.black}
+                    style={{
+                        width:'100%'
+                    }}
+                    />
+                </View>
+                <View style={styles.container3}>
+                    <Text style={styles.text3}>Email address</Text>
+                    <TextInput 
+                    placeholder="Enter your email"
+                    placeholderTextColor ={COLORS.black}
+                    keyboardType='email-address'
+                    style={{
+                        width:'100%'
+                    }}
+                    />
+                </View>
+                <View style={styles.container3}>
+                    <Text style={styles.text3}>City</Text>
+                    <TextInput 
+                    placeholder="Enter your City"
+                    placeholderTextColor ={COLORS.black}
+                    style={{
+                        width:'100%'
+                    }}
+                    />
+                </View>
+                <View style={styles.container3}>
+                    <Text style={styles.text3}>Password</Text>
+                    <TextInput 
+                    placeholder="Enter your password"
+                    placeholderTextColor ={COLORS.black}
+                    secureTextEntry={true}
+                    style={{
+                        width:'100%'
+                    }}
+                    />
+                </View>
+                <View style={styles.container3}>
+                    <Text style={styles.text3}>Confirm password</Text>
+                    <TextInput 
+                    placeholder="Confirm your password"
+                    placeholderTextColor ={COLORS.black}
+                    secureTextEntry={true}
+                    style={{
+                        width:'100%'
+                    }}
+                    />
+                </View>
+                <TouchableOpacity style={styles.submitButton}>
+                    <Text style={styles.submitButtonText}>Submit</Text>
+                </TouchableOpacity>
             </View>
-            <View style={styles.container3}>
-                <Text style={styles.text3}>Name</Text>
-                <TextInput 
-                placeholder="Enter your name"
-                placeholderTextColor ={COLORS.black}
-                style={{
-                    width:'100%'
-                }}
-                />
-            </View>
-            <View style={styles.container3}>
-                <Text style={styles.text3}>Email address</Text>
-                <TextInput 
-                placeholder="Enter your email"
-                placeholderTextColor ={COLORS.black}
-                keyboardType='email-address'
-                style={{
-                    width:'100%'
-                }}
-                />
-            </View>
-            <View style={styles.container3}>
-                <Text style={styles.text3}>City</Text>
-                <TextInput 
-                placeholder="Enter your City"
-                placeholderTextColor ={COLORS.black}
-                style={{
-                    width:'100%'
-                }}
-                />
-            </View>
-            <View style={styles.container3}>
-                <Text style={styles.text3}>Password</Text>
-                <TextInput 
-                placeholder="Enter your password"
-                placeholderTextColor ={COLORS.black}
-                secureTextEntry={true}
-                style={{
-                    width:'100%'
-                }}
-                />
-            </View>
-            <View style={styles.container3}>
-                <Text style={styles.text3}>Confirm password</Text>
-                <TextInput 
-                placeholder="Confirm your password"
-                placeholderTextColor ={COLORS.black}
-                secureTextEntry={true}
-                style={{
-                    width:'100%'
-                }}
-                />
-            </View>
-        </View>
-        <View>
-             
-        </View>
-    
+        </ScrollView>
     </SafeAreaView>
   )
 }
@@ -117,6 +120,20 @@ const styles = StyleSheet.create({
         fontSize:16,
         fontWeight:'bold',
         marginVertical:8,
-    }
+    },
+    submitButton: {
+        width: '100%',
+        height: 48,
+        backgroundColor: COLORS.primary,
+        borderRadius: 12,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 16,
+      },
+      submitButtonText: {
+        fontSize: 18,
+        fontWeight: 'bold',
+        color: COLORS.white,
+      },
 
 })
