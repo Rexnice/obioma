@@ -4,7 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import COLORS from '../constants/colors';
 
 
-const Signup = (navigation) => {
+const Signup = ({navigation}) => {
   return (
     <SafeAreaView style={styles.safeAView}>
         <ScrollView contentContainerStyle={styles.scrollContainer}>
@@ -70,7 +70,9 @@ const Signup = (navigation) => {
                     }}
                     />
                 </View>
-                <TouchableOpacity style={styles.submitButton}>
+                <TouchableOpacity
+                    onPress ={()=>navigation.navigate("Login")} 
+                    style={styles.submitButton}>
                     <Text style={styles.submitButtonText}>Submit</Text>
                 </TouchableOpacity>
             </View>
