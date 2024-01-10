@@ -2,7 +2,7 @@ import React from 'react';
 import {Text, View, } from 'react-native'
 import {createNativeStackNavigator} from '@react-navigation/native-stack'
 import {NavigationContainer} from '@react-navigation/native'
-import { Login, Signup, Welcome } from './screens';
+import { Login, Signup, Welcome, HomePageScreen } from './screens';
 
 const Stack = createNativeStackNavigator()
 export default function App() {
@@ -30,6 +30,13 @@ export default function App() {
                     component={Signup}
                     options ={{
                         headerShown:false
+                    }}
+                />
+                <Stack.Screen
+                    name='HomePageScreen'
+                    component={HomePageScreen}
+                    options ={{
+                        headerShown:true
                     }}
                 />
             </Stack.Navigator>

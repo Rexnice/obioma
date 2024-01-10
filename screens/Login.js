@@ -1,9 +1,11 @@
-import { StyleSheet, Text, View, ScrollView, TextInput, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View, ScrollView, TextInput, TouchableOpacity, Pressable } from 'react-native'
 import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import COLORS from '../constants/colors';
+import { useNavigation } from '@react-navigation/native';
 
 const Login = () => {
+  const navigation = useNavigation()
   return (
     <SafeAreaView style={styles.safeAView}>
       <ScrollView contentContainerStyle={styles.scrollContainer}>
@@ -38,15 +40,18 @@ const Login = () => {
               style={{width:'50%'}}>
               </TextInput>
             </View>
-            <TouchableOpacity style={styles.submitButton}>
+            <Pressable
+              onPress ={()=>navigation.navigate("HomePageScreen")}
+              style={styles.submitButton}>
               <Text style={styles.submitButtonText}>Submit</Text>
-            </TouchableOpacity>
+            </Pressable>
           </View>
         </View>
       </ScrollView>
     </SafeAreaView>
   )
 }
+
 
 export default Login
 
