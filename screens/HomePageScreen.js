@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, TextInput, FlatList, StyleSheet, ScrollView } from 'react-native';
+import COLORS from '../constants/colors';
 
 const HomePageScreen = () => {
   const clothCategories = [
@@ -16,6 +17,9 @@ const HomePageScreen = () => {
     { id: '1', name: 'Casual T-Shirt', price: '$19.99' },
     { id: '2', name: 'Skinny Jeans', price: '$49.99' },
     { id: '3', name: 'Summer Dress', price: '$39.99' },
+    { id: '4', name: 'Summer Dress', price: '$39.99' },
+    { id: '5', name: 'Summer Dress', price: '$39.99' },
+    { id: '6', name: 'Summer Dress', price: '$39.99' }
     // Add more cloth items as needed
   ];
 
@@ -23,6 +27,9 @@ const HomePageScreen = () => {
     { id: '1', name: 'Designer A' },
     { id: '2', name: 'Designer B' },
     { id: '3', name: 'Designer C' },
+    { id: '4', name: 'Designer C' },
+    { id: '5', name: 'Designer C' },
+    { id: '6', name: 'Designer C' },
     // Add more designers as needed
   ];
 
@@ -84,7 +91,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
-    backgroundColor: '#fff',
+    // backgroundColor: '#fff',
+    backgroundColor: COLORS.primary,
   },
   searchBar: {
     height: 40,
@@ -103,8 +111,8 @@ const styles = StyleSheet.create({
     marginRight: 12,
     padding: 8,
     backgroundColor: '#eee',
-    borderRadius: 8,
-    // height:60
+    borderRadius: 6,
+    height:60
   },
   itemContainer: {
     marginBottom: 20,
