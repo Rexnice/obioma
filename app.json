@@ -2,7 +2,9 @@
   "expo": {
     "name": "ellastic",
     "slug": "ellastic",
-    "version": "1.0.0",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
     "assetBundlePatterns": [
       "**/*"
     ]

@@ -36,7 +36,7 @@ export default function App() {
                     name='HomePageScreen'
                     component={HomePageScreen}
                     options ={{
-                        headerShown:true
+                        headerShown:false
                     }}
                 />
             </Stack.Navigator>
