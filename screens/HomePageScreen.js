@@ -4,6 +4,7 @@ import { AntDesign } from "@expo/vector-icons";
 import COLORS from "../constants/colors";
 import Carousel from "../components/Carousel";
 import ClothItem from "../components/ClothItem"
+import Designers from "../components/Designers";
 
 const HomePageScreen = () => {
   return (
@@ -19,6 +20,9 @@ const HomePageScreen = () => {
 
       {/*Cloth Item Components*/}
       <ClothItem/>
+
+      {/*Designers Component to display Designers*/}
+      <Designers/>
     </SafeAreaView>
   );
 };

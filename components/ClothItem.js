@@ -1,4 +1,4 @@
-import {StyleSheet,Text, View, ScrollView} from 'react-native';
+import {StyleSheet,Text, View, ScrollView, Image} from 'react-native';
 import React from 'react';
 
 const ClothItems = ()=>{
@@ -26,11 +26,11 @@ const ClothItems = ()=>{
     ]
     return (
         <View>
-            <ScrollView>
-                {types.map((item, index) => {
-                    <View>
-                        <Image source={{uri:item.image}} style={{width:60, bordeeRadius:30}}/>
-                        <Text>{item.name}</Text>
+            <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+                {designType.map((item, index) => {
+                    <View style={{margin:10 }} key={index}>
+                        <Image source={{uri:item.image}} style={{width:60, borderRadius:30}}/>
+                        <Text style={{marginTop:6, textAlign:'center'}}>{item.name}</Text>
                     </View>
                 })}
             </ScrollView>
@@ -40,6 +40,4 @@ const ClothItems = ()=>{
 
 export default ClothItems;
 
-const styles = StyleSheet.create({
-
-})
+const styles = StyleSheet.create({})
