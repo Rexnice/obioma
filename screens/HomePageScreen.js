@@ -3,6 +3,7 @@ import React from "react";
 import { AntDesign } from "@expo/vector-icons";
 import COLORS from "../constants/colors";
 import Carousel from "../components/Carousel";
+import ClothItem from "../components/ClothItem"
 
 const HomePageScreen = () => {
   return (
@@ -11,7 +12,13 @@ const HomePageScreen = () => {
         <TextInput placeholder="Search for amazing designs"/>
         <AntDesign name='search1' size={24} color='#FF033E'/>
       </View>
+      <View><Text style={{margin:10,}}>Cloth Categories</Text></View>
+
+      {/* Image Slider Carousel*/}
       <Carousel/>
+
+      {/*Cloth Item Components*/}
+      <ClothItem/>
     </SafeAreaView>
   );
 };
