@@ -42,16 +42,16 @@ export default [
     },
     {
         id:'6',
-        image:'https://asoebiguest.com/wp-content/uploads/2023/05/asoebiguest.com-appealing-embroidery-design-patterns-for-senator-wears-2023-487x600.jpg',
-        name:'Great Atte',
+        image:'https://media.licdn.com/dms/image/C4E03AQEc2SvzlmaA3g/profile-displayphoto-shrink_800_800/0/1592157095414?e=2147483647&v=beta&t=14NHbrAjxSq09t5OhdFHtmotdGge53fE_53TkElGftw',
+        name:'Lisa Folawiyo',
         location:'Akwa Ibom',
         offer:'70%',
         jobScore:'80%'
     },
     {
         id:'7',
-        image:'https://asoebiguest.com/wp-content/uploads/2023/05/asoebiguest.com-appealing-embroidery-design-patterns-for-senator-wears-2023-487x600.jpg',
-        name:'Kuku Snazzy',
+        image:'https://2.bp.blogspot.com/-w0zhNxZyiXk/W2BkYWg_U7I/AAAAAAAAAXo/LeNQaNW6UGEOvsZkjssVwPOhEkuKyYzZgCLcBGAs/s1600/a981b9b5-cbb5-4eb5-b684-6f247aee8698.jpg',
+        name:'Anike Adegoke',
         location:'Lagos',
         offer:'50%',
         jobScore:'90%'

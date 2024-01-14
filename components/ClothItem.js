@@ -27,6 +27,17 @@ const ClothItems = () => {
         'https://cdn.sellox.app/preview/AB4FbpobD4NFDJudqbrW%2Fproducts%2F1694602849358_DSC07197-scaled.jpg?auto=compress&fit=crop&w=700&h=950',
       name: 'Ankara',
     },
+    {
+      id: '4',
+      image:'https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/91/492549/1.jpg?0400',
+      name: 'Pants',
+    },
+    {
+      id: '4',
+      image:'https://www.stoneycreekhunting.co.nz/image/cache/catalog/product_images/corporate/mens/shirts/Mens_Corporate_Shirt_Long_Sleeve_Float_Navy-875x1000.jpg',
+      name: 'Shirt',
+    },
+    
   ];
   return (
     <View>
