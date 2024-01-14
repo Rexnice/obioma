@@ -37,6 +37,12 @@ const ClothItems = () => {
       image:'https://www.stoneycreekhunting.co.nz/image/cache/catalog/product_images/corporate/mens/shirts/Mens_Corporate_Shirt_Long_Sleeve_Float_Navy-875x1000.jpg',
       name: 'Shirt',
     },
+    {
+      id: '4',
+      image:'https://i0.wp.com/komback.com/wp-content/uploads/2023/10/Shoes-Men.jpg?fit=1266%2C1229&ssl=1',
+      name: 'Shoes',
+    },
+    
     
   ];
   return (
