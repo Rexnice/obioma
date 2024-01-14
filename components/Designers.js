@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, ScrollView } from 'react-native'
+import { StyleSheet, Text, View, ScrollView, Pressable, ImageBackground } from 'react-native'
 import React from 'react'
 import designers from '../data/designers';
 
@@ -8,7 +8,13 @@ const Designers = () => {
     <View style={{margin:10}}>
       <Text style={{fontSize:16, fontWeight:'500'}}>Meet Amazing Designers</Text>
       <ScrollView>
+        {data.map((item, index) => {
+          <Pressable key={index}>
+            <ImageBackground style={{aspectRatio:5/6, height:170}} source={{uri:item.image}}>
 
+            </ImageBackground>
+          </Pressable>
+        })}
       </ScrollView>
     </View>
   )

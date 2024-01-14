@@ -1,7 +1,7 @@
 export default [
     {
         id:'1',
-        image:'',
+        image:'https://asoebiguest.com/wp-content/uploads/2023/05/asoebiguest.com-appealing-embroidery-design-patterns-for-senator-wears-2023-487x600.jpg',
         name:'Elton John',
         location:'Calabar',
         offer:'60%',
@@ -9,7 +9,7 @@ export default [
     },
     {
         id:'2',
-        image:'',
+        image:'https://asoebiguest.com/wp-content/uploads/2023/05/asoebiguest.com-appealing-embroidery-design-patterns-for-senator-wears-2023-487x600.jpg',
         name:'Wilson Echeng',
         location:'Asaba',
         offer:'50%',
@@ -17,7 +17,7 @@ export default [
     },
     {
         id:'3',
-        image:'',
+        image:'https://asoebiguest.com/wp-content/uploads/2023/05/asoebiguest.com-appealing-embroidery-design-patterns-for-senator-wears-2023-487x600.jpg',
         name:'Ejiks Obasi',
         location:'Calabar',
         offer:'20%',
@@ -26,7 +26,7 @@ export default [
     },
     {
         id:'4',
-        image:'',
+        image:'https://asoebiguest.com/wp-content/uploads/2023/05/asoebiguest.com-appealing-embroidery-design-patterns-for-senator-wears-2023-487x600.jpg',
         name:'Mbotor Japhet',
         location:'Abuja',
         offer:'50%',
@@ -34,7 +34,7 @@ export default [
     },
     {
         id:'5',
-        image:'',
+        image:'https://asoebiguest.com/wp-content/uploads/2023/05/asoebiguest.com-appealing-embroidery-design-patterns-for-senator-wears-2023-487x600.jpg',
         name:'Better Echeng',
         location:'Lagos',
         offer:'60%',
@@ -42,7 +42,7 @@ export default [
     },
     {
         id:'6',
-        image:'',
+        image:'https://asoebiguest.com/wp-content/uploads/2023/05/asoebiguest.com-appealing-embroidery-design-patterns-for-senator-wears-2023-487x600.jpg',
         name:'Great Atte',
         location:'Akwa Ibom',
         offer:'70%',
@@ -50,7 +50,7 @@ export default [
     },
     {
         id:'7',
-        image:'',
+        image:'https://asoebiguest.com/wp-content/uploads/2023/05/asoebiguest.com-appealing-embroidery-design-patterns-for-senator-wears-2023-487x600.jpg',
         name:'Kuku Snazzy',
         location:'Lagos',
         offer:'50%',
