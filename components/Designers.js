@@ -7,14 +7,14 @@ const Designers = () => {
   return (
     <View style={{margin:10}}>
       <Text style={{fontSize:16, fontWeight:'500'}}>Meet Amazing Designers</Text>
-      <ScrollView>
-        {data.map((item, index) => {
-          <Pressable key={index}>
+      <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+        {data.map((item, index) => (
+          <Pressable style={{margin:10}} key={index}>
             <ImageBackground style={{aspectRatio:5/6, height:170}} source={{uri:item.image}}>
 
             </ImageBackground>
           </Pressable>
-        })}
+        ))}
       </ScrollView>
     </View>
   )
