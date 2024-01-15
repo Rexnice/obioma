@@ -10,9 +10,10 @@ const Designers = () => {
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         {data.map((item, index) => (
           <Pressable style={{margin:10}} key={index}>
-            <ImageBackground style={{aspectRatio:5/6, height:170}} source={{uri:item.image}}>
+            <ImageBackground imageStyle={{borderRadius:8}} style={{aspectRatio:5/6, height:170}} source={{uri:item.image}}>
 
             </ImageBackground>
+            <Text style={{marginTop:10,fontSize:17, fontWeight:'500'}}>{item.name}</Text>
           </Pressable>
         ))}
       </ScrollView>
