@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, ScrollView, Pressable, ImageBackground } from 'react-native'
 import React from 'react'
 import designers from '../data/designers';
+import { MaterialIcons } from '@expo/vector-icons';
 
 const Designers = () => {
   const data = designers;
@@ -14,6 +15,11 @@ const Designers = () => {
 
             </ImageBackground>
             <Text style={{marginTop:10,fontSize:17, fontWeight:'500'}}>{item.name}</Text>
+            <View style={{flexDirection:'row', alignItem:'center', marginLeft:-4}}>
+              <MaterialIcons name="location-pin" size={24} color="black" />
+              <Text style={{marginLeft:3}}>{item.location}</Text>
+
+            </View>
           </Pressable>
         ))}
       </ScrollView>
