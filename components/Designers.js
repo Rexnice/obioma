@@ -18,7 +18,6 @@ const Designers = () => {
             <View style={{flexDirection:'row', alignItem:'center', marginLeft:-4}}>
               <MaterialIcons name="location-pin" size={24} color="black" />
               <Text style={{marginLeft:3}}>{item.location}</Text>
- 
             </View>
           </Pressable>
         ))}

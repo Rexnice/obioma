@@ -5,6 +5,7 @@ import COLORS from "../constants/colors";
 import Carousel from "../components/Carousel";
 import ClothItem from "../components/ClothItem"
 import Designers from "../components/Designers";
+import Fillter from "../components/Fillter";
 
 const HomePageScreen = () => {
   return (
@@ -13,6 +14,9 @@ const HomePageScreen = () => {
         <TextInput placeholder="Search for amazing designs"/>
         <AntDesign name='search1' size={24} color='#FF033E'/>
       </View>
+      {/*Filter Component*/}
+      <Fillter/>
+
       {/* Image Slider Carousel*/}
       <Carousel/>
 
