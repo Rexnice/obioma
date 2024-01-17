@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, ScrollView, Pressable, ImageBackground } from '
 import React from 'react'
 import designers from '../data/designers';
 import { MaterialIcons } from '@expo/vector-icons';
+import { AntDesign } from '@expo/vector-icons';
 
 const Designers = () => {
   const data = designers;
@@ -16,8 +17,14 @@ const Designers = () => {
             </ImageBackground>
             <Text style={{marginTop:10,fontSize:17, fontWeight:'500'}}>{item.name}</Text>
             <View style={{flexDirection:'row', alignItem:'center', marginLeft:-4}}>
-              <MaterialIcons name="location-pin" size={24} color="black" />
+              <MaterialIcons name="location-pin" size={18} style={{justifyContent:'center'}} color="black" />
               <Text style={{marginLeft:3}}>{item.location}</Text>
+              <View style={{flexDirection:'row'}}>
+                <AntDesign name="star" size={15} style={{alignItems:'center', padding:2, color:'green'}} color="black" />
+                <AntDesign name="star" size={15} style={{alignItems:'center', padding:2, color:'green'}} color="black" />
+                <AntDesign name="star" size={15} style={{alignItems:'center', padding:2, color:'green'}} color="black" />
+                <AntDesign name="star" size={15} style={{alignItems:'center', padding:2, color:'green'}} color="black" />
+              </View>
             </View>
           </Pressable>
         ))}
