@@ -129,11 +129,12 @@ const {height} = Dimensions.get('window');
 
 const Welcome = ({navigation}) =>{
   return (
-    <SafeAreaView style={{flex:1, color:'white', marginTop:StatusBar.currentHeight}}>
+    <SafeAreaView style={{flex:1, backgroundColor:'white', marginTop:StatusBar.currentHeight}}>
       <View>  
         <ImageBackground style={{
           height:height/2.5,
           backgroundColor:'white',
+          marginTop:18
         }}
         resizeMode="contain" 
         source={require("C:/Users/#emmyCode/Desktop/ErnestProject/obioma/assets/firstImg.jpg")}/>
@@ -145,7 +146,7 @@ const Welcome = ({navigation}) =>{
           <TouchableOpacity onPress={()=>navigation.navigate('Login')} style={{backgroundColor:COLORS.primary, paddingVertical:6, paddingHorizontal:8, width:'48%', borderRadius:6}}>
             <Text style={styles.text3}>Login</Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={()=>navigation.navigate('Signup')} style={{backgroundColor:'white', paddingVertical:6, paddingHorizontal:8, width:'48%', borderRadius:6}}>
+          <TouchableOpacity onPress={()=>navigation.navigate('Signup')} style={{backgroundColor:COLORS.silver, paddingVertical:6, paddingHorizontal:8, width:'48%', borderRadius:6}}>
             <Text style={styles.text4}>Register</Text>
           </TouchableOpacity>
         </View>

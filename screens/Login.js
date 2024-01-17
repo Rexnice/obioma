@@ -1,97 +1,144 @@
-import { StyleSheet, Text, View, ScrollView, TextInput, TouchableOpacity, Pressable } from 'react-native'
-import React from 'react';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import COLORS from '../constants/colors';
-import { useNavigation } from '@react-navigation/native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  ScrollView,
+  TextInput,
+  TouchableOpacity,
+  Pressable,
+  StatusBar,
+} from "react-native";
+import React from "react";
+import { SafeAreaView } from "react-native-safe-area-context";
+import COLORS from "../constants/colors";
+import { useNavigation } from "@react-navigation/native";
+import { AntDesign } from '@expo/vector-icons';
 
 const Login = () => {
-  const navigation = useNavigation()
+  const navigation = useNavigation();
   return (
-    <SafeAreaView style={styles.safeAView}>
-      <ScrollView contentContainerStyle={styles.scrollContainer}>
-        <View style={styles.container1}>
-          <View style={styles.container2}>
-            <Text style={styles.text1}>
-              LOGIN
-            </Text>
-            <Text style={styles.text2}>
-              Check out for Amazing designers
-            </Text>
-          </View>
-          <View>
-            <View>
-              <Text style={{color:COLORS.white}}>
-                Email
-              </Text>
-              <TextInput
-              placeholder="Enter your email"
-              placeholderTextColor={COLORS.black}
-              style={{width:'100%'}}>
-              </TextInput>
-            </View>
-            <View>
-              <Text style={{color:COLORS.white}}>
-                Password
-              </Text>
-              <TextInput
-              placeholder="Enter your password"
-              placeholderTextColor={COLORS.black}
-              secureTextEntry={true}
-              style={{width:'50%'}}>
-              </TextInput>
-            </View>
-            <Pressable
-              onPress ={()=>navigation.navigate("HomePageScreen")}
-              style={styles.submitButton}>
-              <Text style={styles.submitButtonText}>Submit</Text>
-            </Pressable>
-          </View>
+    <SafeAreaView
+      style={{ flex: 1, color: "white", marginTop: StatusBar.currentHeight }}
+    >
+      <View style={styles.container1}>
+        <View style={styles.container2}>
+          <Text style={styles.text1}>Login here</Text>
+          <Text style={styles.text2}>Check out for amazing cloth designs</Text>
         </View>
-      </ScrollView>
+        <View style={{marginVertical:18}}>
+          <TextInput
+            placeholder="Email"
+            placeholderTextColor={COLORS.black}
+            style={{ padding: 8, backgroundColor: COLORS.silver, fontSize: 12, borderRadius:8, marginVertical:8 }}
+          ></TextInput>
+          <TextInput
+            placeholder="Password"
+            secureTextEntry
+            placeholderTextColor={COLORS.black}
+            style={{ padding: 8, backgroundColor: COLORS.silver, fontSize: 12, borderRadius:8, marginVertical:8 }}
+          ></TextInput>
+        </View>
+        <View>
+          <Text style={{
+            fontSize:12,
+            fontWeight:"800",
+            color:COLORS.primary,
+            alignSelf:'flex-end',
+            marginVertical:10
+          }}>
+            Forget your password?
+          </Text>
+        </View>
+        <TouchableOpacity onPress={()=>navigation.navigate('HomePageScreen')} style={{
+          padding:12,
+          backgroundColor:COLORS.primary,
+          marginVertical:8,
+          borderRadius:6,
+          shadowColor:COLORS.primary,
+          shadowOffset:{
+            width:0,
+            height:3,
+          },
+          shadowOpacity:0.3,
+          shadowRadius:3,
+        }}>
+          <Text style={{
+            color:COLORS.white,
+            fontWeight:'bold',
+            textAlign:'center',
+            fontSize:18,
+          }}>Sign in</Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={()=>navigation.navigate('Signup')} style={{
+          padding:12,
+        }}>
+          <Text style={{
+            color:COLORS.black,
+            fontWeight:'bold',
+            textAlign:'center',
+            fontSize:13,
+            marginVertical:10,
+          }}>Create new account</Text>
+        </TouchableOpacity>
+        <View style={{marginVertical:18}}>
+          <Text style={{color:COLORS.primary, textAlign:'center', fontSize:10, fontWeight:'600'}}>Or continue with</Text>
+        </View>
+        <View style={{
+          marginTop:5,
+          flexDirection:'row',
+          justifyContent:'center'
+        }}>
+          <TouchableOpacity style={{
+            padding:6,
+            backgroundColor:COLORS.grey,
+            borderRadius:3,
+            marginHorizontal:6,
+          }}>
+            <AntDesign name="google" size={12} color="black" />
+          </TouchableOpacity>
+          <TouchableOpacity style={{
+            padding:6,
+            backgroundColor:COLORS.grey,
+            borderRadius:3,
+            marginHorizontal:6,
+          }}>
+            <AntDesign name="apple1" size={12} color="black" />
+          </TouchableOpacity>
+          <TouchableOpacity style={{
+            padding:6,
+            backgroundColor:COLORS.grey,
+            borderRadius:3,
+            marginHorizontal:8,
+          }}>
+            <AntDesign name="facebook-square" size={12} color="black" />
+          </TouchableOpacity>
+        </View>
+      </View>
     </SafeAreaView>
-  )
-}
+  );
+};
 
-
-export default Login
+export default Login;
 
 const styles = StyleSheet.create({
-  safeAView:{
-    flex:1,
-    backgroundColor: COLORS.secondary,
+  container1: {
+    padding: 6,
   },
-  container1:{
-    flex:1,
-    marginHorizontal:22,
+  container2: {
+    alignItems: "center",
   },
-  container2:{
-      marginVertical:22,
+  text1: {
+    fontSize: 25,
+    fontWeight: "bold",
+    color: COLORS.primary,
+    marginVertical: 12,
   },
-  text1:{
-      fontSize:22,
-      fontWeight:"bold",
-      marginVertical:12,
-      color:COLORS.black
+  text2: {
+    fontSize: 14,
+    color: COLORS.black,
+    fontWeight: "900",
+    maxWidth:'60%',
+    textAlign:'center',
+    marginVertical:12,
   },
-  text2:{
-      fontSize:16,
-      color:COLORS.black
-  },
-  submitButton: {
-    width: '100%',
-    height: 48,
-    backgroundColor: COLORS.primary,
-    borderRadius: 12,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: 16,
-  },
-  submitButtonText: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    color: COLORS.white,
-  },
-})
-
-
-
+});

@@ -71,7 +71,7 @@ const Signup = ({navigation}) => {
                     />
                 </View>
                 <TouchableOpacity
-                    onPress ={()=>navigation.navigate("Login")} 
+                    onPress ={()=>navigation.navigate("HomePageScreen")} 
                     style={styles.submitButton}>
                     <Text style={styles.submitButtonText}>Submit</Text>
                 </TouchableOpacity>
