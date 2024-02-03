@@ -3,6 +3,7 @@ import React from 'react';
 import { Ionicons } from '@expo/vector-icons';
 import { MaterialIcons, Entypo } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import COLORS from "../constants/colors";
 
 
 const Fillter = () => {
@@ -11,19 +12,19 @@ const Fillter = () => {
         <Pressable style={styles.pressableStyle}>
             <View style={{flexDirection:'row'}}>
                 <Text style={{marginRight:4}}>Filter</Text>
-                <Ionicons name="filter" size={18} color="black" />
+                <Ionicons name="filter" size={18} color={COLORS.primary} />
             </View>
         </Pressable>
         <Pressable style={styles.pressableStyle}>
             <View style={{flexDirection:'row'}}>
                 <Text style={{marginRight:4}}>location</Text>
-                <MaterialIcons name="location-pin" size={18} style={{justifyContent:'center'}} color="black" />
+                <MaterialIcons name="location-pin" size={18} style={{justifyContent:'center'}} color={COLORS.primary} />
             </View>
         </Pressable>
         <Pressable style={styles.pressableStyle}>
             <View style={{flexDirection:'row'}}>
                 <Text style={{marginRight:4}}>ratings</Text>
-                <MaterialCommunityIcons name="star-circle" size={18} color="black" />
+                <MaterialCommunityIcons name="star-circle" size={18} color={COLORS.primary} />
             </View>
         </Pressable>
         <Pressable style={styles.pressableStyle}>
